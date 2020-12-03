@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f3fb6b3fda.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onscroll="scroll">
+    <header>
+        <nav id="gnb">
+            <ul class="gnb_wrap google_sans_14 color_66">
+                <li><a href=""><span><img src="img/logo.png" alt=""></span>Google Store</a></li>
+                <li><a href="">Pixel</a></li>
+                <li><a href="">Nest</a></li>
+                <li><a href="">Stadia</a></li>
+                <li><a href="">Pixelbook</a></li>   
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Special Offers</a></li>
+            </ul>
+
+            <ul class="lnb">
+                <span class="material-icons" onclick="menuOpen()" id="open">menu</span>
+                <span class="material-icons" onclick="menuOpen()" id="close">close</span>
+                <li class="google_logo_top" id="tablet_logo"><a href=""><span><img src="img/logo.png" alt=""></span>Google Store</a></li>
+                <li class="google_logo_top" id="mobile_logo"><a href=""><span><img src="img/logo.png" alt=""></span></a></li>
+            </ul>
+
+            <ul class="gnb_icon_wrap google_sans_14 color_66">
+                <span class="material-icons"><a href="">search</a></span>
+                <span class="material-icons"><a href="">help</a></span>
+                <span class="material-icons"><a href="">shopping_cart</a></span>
+                <span class="material-icons"><a href="">account_circle</a></span>
+            </ul>
+        </nav>
+
+        <div class="lnb_menu" id="lnb_open">
+            <div class="lnb_wrap">
+
+                <div><a href=""><span><img src="img/phone.png" alt=""></span>Pixel</a></div>
+                <div><a href=""><span><img src="img/nes.png" alt=""></span>Nest</a></div>
+                <div><a href=""><span><img src="img/game.png" alt=""></span>Stadia</a></div>
+                <div><a href=""><span><img src="img/pix.png" alt=""></span>Pixelbook</a></div>
+                <div><a href=""><span><img src="img/acc.png" alt=""></span>Accessoriesdiva</a></div>
+                <div><a href=""><span><img src="img/offers.png" alt=""></span>Special Offdivs</a></div>
+
+            </div>
+
+            <div class="lnb_help">
+                <h4><span class="material-icons">
+                        help
+                    </span>Help</h4>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+        <section id="main_content">
+
+            <div class="main_content_wrap fade">
+
+                <div class="main_content_pixel slides fade" id="pixel">
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">Pixel 5 and Pixel 4a with 5G</h5>
+                            <h2 class="color_grey_500 pixel_font">Putting the<br> <span class="color_26">G</span> in
+                                <span class="color_26">5G</span>.<sup>1</sup></h2>
+                            <h6 class="color_grey_400">Super fast. Super helpful. Meet the new Pixel phones.</h6>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_content_speaker slides fade" id="speaker">
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">Nest Audio</h5>
+                            <h2 class="color_grey_500 speaker_font"><span class="color_24">The helpful
+                                    speaker</span><br>
+                                that’s
+                                all
+                                about sound.<sup>2</sup></h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main_content_netflix slides fade" id="netflix">
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">The new Chromecast with Google TV</h5>
+                            <h2 class="color_grey_500 netflx_font"><span class="color_217">Entertainment you
+                                    love.</span>
+                                With a little help from Google.</h2>
+                            <div class="main_content_neflix_inst">
+                                <figure>
+                                    <img src="img/netflix.png" alt="">
+                                </figure>
+                                <h6 class="color_grey_400">Exclusive Google Store bundle: Buy Chromecast with Google
+                                    TV
+                                    and
+                                    6 months of Netflix for just $89.99.*</h6>
+                            </div>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text_align dots_wrap">
+                    <a class="dots" onclick="slideChange(0)"></a>
+                    <a class="dots" onclick="slideChange(1)"></a>
+                    <a class="dots" onclick="slideChange(2)"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="main_content_m">
+
+            <div class="main_content_wrap_m fade">
+
+                <div class="main_content_pixel_m slides_m fade" id="pixel">
+                    <div class="main_text_wrap_m">
+                        <div class="main_text_m">
+                            <h5 class="color_grey_500">Pixel 5 and Pixel 4a with 5G</h5>
+                            <h2 class="color_grey_500 pixel_font_m">Putting the<br> <span class="color_26">G</span> in
+                                <span class="color_26">5G</span>.<sup>1</sup></h2>
+                            <h6 class="color_grey_400">Super fast. Super helpful. Meet the new Pixel phones.</h6>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="back">
+                            <img src="img/ss.jpg" alt="">
+                    </div> -->
+                </div>
+
+                <div class="main_content_speaker_m slides_m fade" id="speaker">
+                    <div class="main_text_wrap_m">
+                        <div class="main_text_m">
+                            <h5 class="color_grey_500">Nest Audio</h5>
+                            <h2 class="color_grey_500 speaker_font_m"><span class="color_24">The helpful
+                                    speaker</span><br>
+                                that’s
+                                all
+                                about sound.<sup>2</sup></h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main_content_netflix_m slides_m fade" id="netflix">
+                    <div class="netflix_m_wrap">
+                        <div class="netflix_logo_m">
+                            <div>
+                                <img src="img/netflix.png" alt="">
+                            </div>
+                            <div class="netflix_logo_t">
+                                Exclusive Google Store bundle: Buy Chromecast with Google
+                                TV
+                                and
+                                6 months of Netflix for just $89.99.*
+                            </div>
+                        </div>
+                        <div class="netflix_text_mobile_wrap">
+                            <h5 class="color_grey_500">The new Chromecast with Google TV</h5>
+                            <h2 class="color_grey_500 netflx_font_m"><span class="color_217">Entertainment you
+                                    love.</span>
+                                With a little help from Google.</h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                        <!-- <div>
+                            <img src="img/netflix_mobile.jpg" alt="">
+                        </div> -->
+
+                    </div>
+                    
+                    <!-- <div class="main_text_wrap_m">
+                        <div class="main_text_m">
+                            <div class="main_content_neflix_inst_m">
+                                <figure>
+                                    <img src="img/netflix.png" alt="">
+                                </figure>
+                                <h6 class="color_grey_400">Exclusive Google Store bundle: Buy Chromecast with Google
+                                    TV
+                                    and
+                                    6 months of Netflix for just $89.99.*</h6>
+                            </div>
+                            <h5 class="color_grey_500">The new Chromecast with Google TV</h5>
+                            <h2 class="color_grey_500 netflx_font_m"><span class="color_217">Entertainment you
+                                    love.</span>
+                                With a little help from Google.</h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                        <div class="netflix_mobile_img">
+                            <img src="img/netflix_mobile.jpg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="text_align dots_wrap">
+                    <a class="dots" onclick="slideChangeM(0)"></a>
+                    <a class="dots" onclick="slideChangeM(1)"></a>
+                    <a class="dots" onclick="slideChangeM(2)"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="product_list_content">
+            <div class="product_list_wrap">
+                <div class="list_items">
+                    <img src="img/pixel5.png" alt="">
+                    <h6>Pixel 5</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixel5g.png" alt="">
+                    <h6>Pixel 4a with 5G</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/nestaudio.png" alt="">
+                    <h6>Nest Audio</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/chromecast.png" alt="">
+                    <h6>Chromecast with Google TV</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixel4.png" alt="">
+                    <h6>Pixel 4a</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/buds.jpg" alt="">
+                    <h6>Pixel Buds</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/wifi.png" alt="">
+                    <h6>Nest Wifi</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/nesthub.png" alt="">
+                    <h6>Nest Hub Max</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixelgo.png" alt="">
+                    <h6>Pixelbook Go</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/cast.png" alt="">
+                    <h6>Chromecast</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixel4g.png" alt="">
+                    <h6>Pixel 4</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/mini.png" alt="">
+                    <h6>Nest Mini (2nd Gen)</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/console.png" alt="">
+                    <h6>Stadia Premiere Edition</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/thermost.png" alt="">
+                    <h6>Nest Thermostat</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/learning_thermost.png" alt="">
+                    <h6>Nest Learning Thermostat</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/doorbell.png" alt="">
+                    <h6>Nest Hello Doorbell</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/nesthub.png" alt="">
+                    <h6>Nest Hub</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/googlewifi.png" alt="">
+                    <h6>Google Wifi</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixelslate.png" alt="">
+                    <h6>Pixel Slate</h6>
+                </div>
+                <div class="list_items">
+                    <img src="img/pixelbook.png" alt="">
+                    <h6>Pixelbook</h6>
+                </div>
+            </div>
+        </section>
+
+        <section id="phone_content">
+            <div class="phone_wrap">
+                <div class="phone_pixel5">
+                    <div class="phone_text">
+                        <h5 class="color_grey_500">Pixel 5</h5>
+                        <h2 class="color_grey_500 phone_font">The <span class="color_26">ultimate 5G</span> Google
+                            phone.<sup>1</sup></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <video muted autoplay>
+                        <source src="img/pixel5.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="phone_pixel4">
+                    <div class="phone_text">
+                        <h5 class="color_grey_500">Pixel 4a with 5G</h5>
+                        <h2 class="color_grey_500 phone_font"><span class="color_217">High-speed
+                                help,</span> for less.<sup>3</sup></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <video muted autoplay>
+                        <source src="img/pixel4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="wifi_ther_content">
+            <div class="wifi_ther_wrap">
+                <div class="thermo_wrap">
+                    <div class="thermo_img">
+                        <img src="img/thermostat.jpg" alt="" class="thermo_web">
+                        <img src="img/thermo_m.jpg" alt="" class="thermo_mobile_img">
+                    </div>
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">The new Nest Thermostat</h5>
+                            <h2 class="color_grey_500 thermo_font">Helpful<br>thermostat<br>
+                                <span class="color_24">Cozy price.</span></h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="wifi_wrap">
+                    <div class="wifi_img">
+                        <img src="img/wifi_content.jpg" alt="" class="thermo_web"> 
+                        <img src="img/wifi_mm.jpg" alt="" class="thermo_mobile_img">
+                    </div>
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">Google Wifi</h5>
+                            <h2 class="color_grey_500 wifi_font"><span class="color_217">Better Wi-Fi
+                                    coverage.</span>
+                                For less.<sup>4</sup></h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages_content">
+
+            <div class="packages_wrap">
+
+                <div class="nestaudio_wrap">
+                    <div class="nestaudio_text">
+                        <h5 class="color_grey_500">Nest Audio Entertainment<span class="space"></span> packages
+                        </h5>
+                        <h2 class="color_grey_500 sub_title"><span class="color_245">Built for music.</span><br>Made
+                            for
+                            you.<br></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="nestaudio_img">
+                        <img src="img/nestaudiooo.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="nestvideo_wrap">
+                    <div class="nestvideo_text">
+                        <h5 class="color_grey_500">Nest Video Entertainment<span class="space"></span> packages
+                        </h5>
+                        <h2 class="color_grey_500 sub_title"><span class="color_26">So much to watch.</span><br>So
+                            easy
+                            to find.</h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="nestvideo_img">
+                        <img src="img/nestvideo.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="nesthome_wrap">
+                    <div class="nesthome_text">
+                        <h5 class="color_grey_500">Nest Home Security packages</h5>
+                        <h2 class="color_grey_500 sub_title">Your home, <span class="color_217">safe and<span class="space"></span>
+                                sound.</span></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="nesthome_img">
+                        <img src="img/nesthome.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="white_space">
+
+        </div>
+
+        <div class="black_community">
+            <p>Google is committed to advancing racial equity for Black communities.<br>
+                <a href="" class="color_26">See how.</a>
+            </p>
+
+        </div>
+
+        <section id="pixel4a_content">
+            <div class="pixel4a_content_wrap">
+                <div class="pixel4a_wrap">
+                    <div class="pixel4a_img">
+                        <img src="img/pixel4a.jpg" alt="" class="web_pixel_4a">
+                        <img src="img/pixel4.jpg" alt="" class="mobile_pixel_4a">
+                    </div>
+                    <div class="main_text_wrap">
+                        <div class="main_text">
+                            <h5 class="color_grey_500">Pixel 4a</h5>
+                            <h2 class="color_grey_500 thermo_font">Packed with the<br>
+                                <span class="color_24">things you want.</span></h2>
+                            <button class="btn-3">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nest_series_content">
+
+            <div class="nest_series_wrap">
+
+                <div class="nest_wifi">
+                    <div class="nest_series_text">
+                        <h5 class="color_grey_500">Nest Wifi</h5>
+                        <h2 class="color_grey_500 nest_series_font"><span class="color_245">Fast, reliable
+                                Wi-Fi<span class="space_2"></span><span class="space"></span></span> for your whole
+                            home.<sup>4</sup></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="nest_wifi_img">
+                        <img src="img/nest_wifi.jpg">
+                    </div>
+                </div>
+
+                <div class="nest_hub">
+                    <div class="nest_series_text">
+                        <h5 class="color_grey_500">Nest Hub Max</h5>
+                        <h2 class="color_grey_500 nest_series_font">Help for your home.<span class="space"></span><span class="space_2"></span><span class="color_26">All
+                                in one display.</span></h2>
+                        <button class="btn-3">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="nest_hub_img">
+                        <img src="img/nest_hub.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!-- <div class="footer_notice">
+            <ul class="footer_notice_wrap color_66">
+                <li><sup>*</sup>
+                    Eligible Chromecast with Google TV purchases on the Google Store between 09/30/2020 and 12/31/2021
+                    include 6 months of the Netflix Standard Streaming Plan 2-screen plan (total current value $77.94).
+                    Offer applies only to the following<br> SKUs while supplies last and subject to availability:
+                    GA02764-US, GA02765-US, GA02766-US. Limit 3 per customer / Google Account. If you return the device
+                    within the allowable return period and have already redeemed the Netflix offer, you<br> will be
+                    refunded $49.99 USD (cost of the Chromecast device). If you return the device within the allowable
+                    return period and have not redeemed the Netflix offer, you will be refunded the entire amount
+                    charged. To redeem Netflix offer,<br> customers must set up an eligible Chromecast with Google TV
+                    device and follow instructions to apply offer value to a Netflix account by 03/01/2022. Available to
+                    new and existing Netflix subscribers. Not redeemable or refundable for cash,<br> and cannot be
+                    exchanged. Offer value may be applied to a different Netflix streaming plan under the same account;
+                    exchanges in this manner may alter the duration of the offer. Netflix price plans subject to change
+                    and the duration of the<br> offer value may be prorated accordingly. A Netflix compatible device
+                    (manufactured and sold separately) and broadband Internet connection are required to watch
+                    instantly. See www.netflix.com/termsofuse. Visit <a href=""> g.co/cast/netflix </a>for more<br>
+                    information on redeeming your Netflix offer. Offer subject to applicable law and void where
+                    prohibited.</li>
+                <li><sup>1</sup>
+                    Requires a 5G data plan (sold separately). 5G service and roaming not available on all carrier
+                    networks or in all areas and may vary by country. Contact carrier for details. 5G service, speed and
+                    performance depend on many factors<br> including, but not limited to, carrier network capabilities,
+                    device configuration and capabilities, network traffic, location, signal strength and signal
+                    obstruction. Actual results may vary. Some features not available in all areas. Data rates may<br>
+                    apply. See <a href="">g.co/pixel/networkinfo</a> for info.</li>
+                <li><sup>2</sup>
+                    Nest Audio requires a Wi-Fi network, a nearby electrical outlet, a Google Account, and a compatible
+                    mobile device. See <a href="">g.co/home/req</a> for details.</li>
+                <li><sup>3</sup>
+                    Compared to MSRP of unlocked Pixel 5 phone on the Google Store in the U.S.
+                </li>
+                <li>
+                    <sup>4</sup>
+                    Home size, materials and layout can affect how a Wi-Fi signal travels. Larger homes or homes with
+                    thicker walls or long, narrow layouts may need extra Wifi points for full coverage. The strength and
+                    speed of the signal will depend on your Internet provider.
+                </li>
+            </ul>
+        </div> -->
+        <div class="footer_notice">
+            <ul class="footer_notice_wrap color_66">
+                <li><sup>*</sup>
+                    Eligible Chromecast with Google TV purchases on the Google Store between 09/30/2020 and 12/31/2021
+                    include 6 months of the Netflix Standard Streaming Plan 2-screen plan (total current value $77.94).
+                    Offer applies only to the following SKUs while supplies last and subject to availability:
+                    GA02764-US, GA02765-US, GA02766-US. Limit 3 per customer / Google Account. If you return the device
+                    within the allowable return period and have already redeemed the Netflix offer, you will be
+                    refunded $49.99 USD (cost of the Chromecast device). If you return the device within the allowable
+                    return period and have not redeemed the Netflix offer, you will be refunded the entire amount
+                    charged. To redeem Netflix offer, customers must set up an eligible Chromecast with Google TV
+                    device and follow instructions to apply offer value to a Netflix account by 03/01/2022. Available to
+                    new and existing Netflix subscribers. Not redeemable or refundable for cash, and cannot be
+                    exchanged. Offer value may be applied to a different Netflix streaming plan under the same account;
+                    exchanges in this manner may alter the duration of the offer. Netflix price plans subject to change
+                    and the duration of the offer value may be prorated accordingly. A Netflix compatible device
+                    (manufactured and sold separately) and broadband Internet connection are required to watch
+                    instantly. See www.netflix.com/termsofuse. Visit <a href=""> g.co/cast/netflix </a>for more
+                    information on redeeming your Netflix offer. Offer subject to applicable law and void where
+                    prohibited.</li>
+                <li><sup>1</sup>
+                    Requires a 5G data plan (sold separately). 5G service and roaming not available on all carrier
+                    networks or in all areas and may vary by country. Contact carrier for details. 5G service, speed and
+                    performance depend on many factors including, but not limited to, carrier network capabilities,
+                    device configuration and capabilities, network traffic, location, signal strength and signal
+                    obstruction. Actual results may vary. Some features not available in all areas. Data rates may
+                    apply. See <a href="">g.co/pixel/networkinfo</a> for info.</li>
+                <li><sup>2</sup>
+                    Nest Audio requires a Wi-Fi network, a nearby electrical outlet, a Google Account, and a compatible
+                    mobile device. See <a href="">g.co/home/req</a> for details.</li>
+                <li><sup>3</sup>
+                    Compared to MSRP of unlocked Pixel 5 phone on the Google Store in the U.S.
+                </li>
+                <li>
+                    <sup>4</sup>
+                    Home size, materials and layout can affect how a Wi-Fi signal travels. Larger homes or homes with
+                    thicker walls or long, narrow layouts may need extra Wifi points for full coverage. The strength and
+                    speed of the signal will depend on your Internet provider.
+                </li>
+            </ul>
+        </div>
+        <div class="google_logo">
+            <a href=""><span><img src="img/logo.png" alt=""></span>Google Store</a>
+        </div>
+        <div class="main_footer">
+            <div class="main_footer_wrap">
+                <div class="footer_ul_li_wrap">
+                    <div class="block"></div>
+                    <div class="footer_ul_wrap">
+                        <ul class="footer_ul_1">
+                            <li><a href="">Placing an order</a></li>
+                            <li><a href="">Shipping options</a></li>
+                            <li><a href="">Tracking a package</a></li>
+                            <li><a href="">Country availability</a></li>
+                            <li><a href="">Repairs</a></li>
+                            <li><a href="">Installation</a></li>
+                            <li><a href="">Nest legal</a></li>
+                            <li><a href="">Nest Privacy</a></li>
+                        </ul>
+                        <ul class="footer_ul_2">
+                            <li><a href="">Financing</a></li>
+                            <li><a href="">Device recycling</a></li>
+                            <li><a href="">Sustainability</a></li>
+                            <li><a href="">Gift returns</a></li>
+                            <li><a href="">Refurbished</a></li>
+                            <li><a href="">Trade-in</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom_main">
+                    <div class="footer_bottom_wrap">
+                        <div class="footer_bottom_icons">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="footer_bottom_contact">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="img/usaflag.png" alt="">
+                                    </span>United States
+                                </li>
+                                <li>
+                                    Privacy
+                                </li>
+                                <li>
+                                    Google Nest Commitment to Privacy
+                                </li>
+                                <li>
+                                    Sales Terms
+                                </li>
+                                <li>
+                                    Terms of Services
+                                </li>
+                                <li>
+                                    Careers
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- // function bt1() {
+        //     document.getElementById("pixel").style
+        //         = "display:flex"
+        //     document.getElementById("speaker").style
+        //         = "display:none"
+        //     document.getElementById("netflix").style
+        //         = "display:none"
+        //     document.getElementsByClassName("dots_wrap").style
+        //         = "position:absolute; bottom:5%; left:12%;"
+        // }
+
+        // function bt2() {
+        //     document.getElementById("speaker").style
+        //         = "display:flex;"
+        //     document.getElementById("pixel").style
+        //         = "display:none"
+        //     document.getElementById("netflix").style
+        //         = "display:none"
+        //     document.getElementsByClassName("dots_wrap").style
+        //         = "position:absolute; bottom:5%; left:12%;"
+        // }
+
+        // function bt3() {
+        //     document.getElementById("netflix").style
+        //         = "display:flex"
+        //     document.getElementById("speaker").style
+        //         = "display:none"
+        //     document.getElementById("pixel").style
+        //         = "display:none"
+        //     document.getElementsByClassName("dots_wrap").style
+        //         = "position:absolute; bottom:5%; left:12%;"
+        // } -->
+<!-- 
+        // <i class="fas fa-circle"></i>
+        // <i class="far fa-circle"></i> -->
+
+
+
+        <script>
+        function slideChange(slideNumber) {
+            for (i = 0; i < 3; i++){
+                document.getElementsByClassName("slides")[i].style = "display:none;" 
+                document.getElementsByClassName("dots")[i].style = "background:#423F3F; width:8px; height:8px;" 
+            }
+
+            document.getElementsByClassName("slides")[slideNumber].style = "display:flex;"
+            document.getElementsByClassName("dots")[slideNumber].style = "background:rgba(0,0,0,0); border:2px solid #423F3F; width:10px; height:10px;"
+
+
+        }
+
+
+        function slideChangeM(slideNumber) {
+            for (i = 0; i < 3; i++){
+                document.getElementsByClassName("slides_m")[i].style = "display:none;" 
+                document.getElementsByClassName("dots")[i].style = "background:#423F3F; width:8px; height:8px;" 
+            }
+
+            document.getElementsByClassName("slides_m")[slideNumber].style = "display:flex;"
+            document.getElementsByClassName("dots")[slideNumber].style = "background:rgba(0,0,0,0); border:2px solid #423F3F; width:10px; height:10px;"
+
+        }
+
+
+
+        var menuState = 0;
+
+        function menuOpen() {
+            if (menuState == 0) {
+                document.getElementById("lnb_open").style = "display:flex;"
+                document.getElementById("main").style  = "display:none"
+                document.getElementById("footer").style  = "display:none"
+                document.getElementById("open").style  = "display:none"
+                document.getElementById("close").style  = "display:flex"
+                menuState = 1;
+
+            } else {
+                document.getElementById("lnb_open").style = "display:none;"
+                document.getElementById("main").style  = "display:block"
+                document.getElementById("footer").style  = "display:block"
+                document.getElementById("open").style  = "display:flex"
+                document.getElementById("close").style  = "display:none"
+                menuState = 0;
+
+            }
+
+        }
+
+        function scroll() {
+
+            if (document.body.scrollTop > 10)
+            {
+                document.getElementById("gnb").style
+                    = "box-shadow: 0px 1px 10px #999; position:fixed; z-index:99999; background:white;"
+        
+            }
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
